@@ -35,8 +35,6 @@ class ImageGallery extends Component {
       });
     }
 
-    //если меняется page то делаю новый фетч
-
     const prevPage = prevState.page;
     const nextPage = this.state.page;
 
@@ -70,7 +68,7 @@ class ImageGallery extends Component {
     const { status, images, showModal, modalImage, totalHits, page } = this.state;
 
     if (status === 'idle') {
-      return <div>Введите название картинки</div>;
+      return <div></div>;
     }
 
     if (status === 'pending') {
